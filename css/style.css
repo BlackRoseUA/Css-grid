@@ -1,0 +1,57 @@
+body
+{
+	margin: 0;
+}
+
+h1 h2
+{
+	margin-top: 0;
+}
+.p
+{
+	margin: 0;
+}
+.wrapper
+{
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	height: 580px;
+}
+.item-1
+{
+	display:grid;
+	grid-template-columns: repeat(7, 1fr);
+	grid-template-rows: 60px, 130px, 50px;
+	column-gap: 10px;
+	padding:20px, 8px;
+	border:1px solid;
+	grid-template-areas: 
+	"title1 title1 title1 title1 title1 title1 title1"
+	"img text1 text1 text1 text1 text1 text1"
+	". . . . . read read"
+}
+.title1
+{
+	grid-area: title1;
+}
+
+.img
+{
+	grid-area: img;
+	width:100%;
+	height: auto;
+}
+.text1
+{
+	grid-area: text1;
+}
+.read
+{
+	grid-area: read;
+	margin-top:50px;
+	float: right;
+}
+
+
+
+
